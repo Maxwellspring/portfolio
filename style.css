@@ -1,0 +1,28 @@
+* {
+    margin : 0;
+}
+
+#holder {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#right {
+    transform: scaleX(-1);
+
+}
+
+#center {
+
+    justify-content: center;
+}
+#left {
+
+}
+
+#right, #center, #left {
+
+
+}

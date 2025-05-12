@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
     <script type="importmap">
         {
           "imports": {
@@ -17,14 +17,16 @@
         <!-- it is kinda hard to just use HTML when JS is very integral -->
 </head>
 <body>
-    <section id="left">
-        <img src="media/tempArrowButton.png" alt="left arrow">
-    </section>
-    <section id="center">
-        <img src="media/tempSquareButton.png" alt=" middle square">
-    </section>
-    <section id="right">
-        <img src="media/tempArrowButton.png" alt="right arrow">
+    <section id="holder">
+        <section id="left">
+            <img src="media/tempArrowButton.png" alt="left arrow">
+        </section>
+        <section id="center">
+            <img src="media/tempSquareButton.png" alt=" middle square">
+        </section>
+        <section id="right">
+            <img src="media/tempArrowButton.png" alt="right arrow">
+        </section>
     </section>
 </body>
 </html>
