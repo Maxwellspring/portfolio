@@ -1,15 +1,36 @@
 * {
-    margin : 0;
+    margin: 0;
 }
 
 #holder {
-    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
+    position: absolute;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(231, 231, 231);
+    text-shadow: 0px 0px 5px black;
 }
 
-#right {
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+#visual-holder {
+    background-color: rgb(73, 73, 73);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* #right {
     transform: scaleX(-1);
 
 }
@@ -25,4 +46,4 @@
 #right, #center, #left {
 
 
-}
+} */
