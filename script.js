@@ -64,6 +64,7 @@ function onMouseMove(event) {
     const intersects = raycaster.intersectObjects(scene.children, true);
 
     // console.log(intersects.distance)
+    cursorText.style.display = 'none';
 
     // Check if there are any intersections
     if (intersects.length > 0) {
@@ -109,12 +110,19 @@ function onMouseMove(event) {
             // cursorText.style.fontSize = 10 * distanceToIntersection / 2 + 'px'; // Adjust font size based on distance
 
             cursorText.style.display = 'block';
+        } else if (intersectedObject.uuid == sphere.uuid) {
+            console.log("HOVER!");
+            cursorText.textContent = "none";
+            // cursorText.style.fontSize = 10 * distanceToIntersection / 2 + 'px'; // Adjust font size based on distance
+
+            cursorText.style.display = 'none';
+
         } else {
             console.log("NOT HOVER!")
             // cursorText.style.fontSize = 10 * distanceToIntersection / 2 + 'px'; // Adjust font size based on distance
 
             intersecting = false;
-            intersectedObject = null; // Reset the intersected object
+            intersectedObject = undefined; // Reset the intersected object
             cursorText.textContent = ''; // Clear text when not hovering over an object
             cursorText.style.display = 'none';
         }
